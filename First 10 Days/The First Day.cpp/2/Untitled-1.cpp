@@ -3,7 +3,7 @@ using namespace std;
 int main()
 /*
 We can not add a number at the first letter of a vabriable 
-We can use _ in a vabiarable 
+We can use _ in a vabiarable But not Special character like !@#$
 In vabriales we use cameLcase . For example : myBestFreind
 */
 {
