@@ -11,17 +11,20 @@ int main()
   cout << ++comments << "\n";  //1   Firstly will plus 1 on The variable then print (Updating)
   cout << comments << "\n";    //1
 
+  // Higher Ideas
+
   int x = 10;
   int y = x++;                   //Use it Then Plus 1 (Updating x)
-  cout << y << "\n";
+  cout << y << "\n";             
   cout << ++x << "\n";           //12  We already Plused 1 Then Plus 1 and print x
 
   int z = 10;
-  int a = ++z;                   //plus one and use it (Updating x)
+  int a = ++z;                   //plus one and use it (Updating z)
   cout << a << "\n";             //11
   cout << a++ << "\n";           //11  Print x then plus 1
 
-
-  
   return 0;
 }
+/*
+Date : 2026/1/31
+*/
