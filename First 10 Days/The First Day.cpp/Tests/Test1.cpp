@@ -43,4 +43,5 @@ int main()
   cout << 'a'+g << "\n";
   cout << sizeof('a'+g);
   return 0;
+  ;
 }
