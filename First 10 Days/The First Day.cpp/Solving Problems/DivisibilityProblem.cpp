@@ -21,7 +21,7 @@ int main(){
     }
 
     int z = 0;
-    while(b != 0 && z < t){
+    while(z < t){
         cout << y[z] << "\n";
         z++;
     }
