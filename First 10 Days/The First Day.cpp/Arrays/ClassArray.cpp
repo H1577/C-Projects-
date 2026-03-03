@@ -3,14 +3,13 @@ Sytax
 
 Template < DataType , Size> name;
 
-There are some Command Like 
+There are some Commands Like 
 name.fill(1)
 name.at(1)
 name.size()
 name.front()
 name.back()
 name.empty() True Or False
-
 
 */
 
