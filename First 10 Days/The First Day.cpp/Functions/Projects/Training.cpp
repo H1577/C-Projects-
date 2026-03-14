@@ -28,7 +28,7 @@ int main(){
     string s;
     cin >> s;
     for(int i =0; i<s.size();i++){
-        if(isupper(s[i])){//Only In Conditions Compiler will get it
+        if(isupper(s[i])){//Only In Conditions Compiler will get it and Updateing
             cout << char(tolower(s[i]));
         }
         else{cout << char(toupper(s[i]));}
