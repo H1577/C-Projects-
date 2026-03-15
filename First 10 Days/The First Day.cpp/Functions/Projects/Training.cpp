@@ -20,7 +20,7 @@ int main(){
     cout << char(toupper('b')) << '\n'; //B
     //=====================================================
     cout << "H\n";
-    cout << tolower('H')<< '\n';//ASCII of Capital B -> 104
+    cout << tolower('H')<< '\n';//ASCII of Capital h -> 104
     cout << char(tolower('H')) << '\n'; //h
     //======================================================
 
