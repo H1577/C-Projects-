@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <cmath>
 using namespace std;
 
 int main(){
@@ -10,15 +9,20 @@ int main(){
     while(t--){
         int n;
         cin >> n;
-        int sum =0;
+        vector<int> count(101,0);
         vector<int> nums(n);
         for(int i =0;i<n;i++){
             cin >> nums[i];
-            sum += nums[i];
-        }
-        for(int i=0; i <n;i++){
-            
-        }    
+            count[nums[i]]++;
+        } 
+        for(int i=0; i < n;i++){
+            if(count[nums[i]] == 1){
+                cout << i+1 << '\n';
+            }
+        } 
     }
     return 0;
 }
+/*
+Date: 2026/3/21
+*/
