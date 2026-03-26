@@ -1,19 +1,24 @@
 #include <iostream>
 #include <string>
-#include <set>
+#include <map>
 using namespace std;
 
 int main(){
 
     int n;
     cin >> n;
-    set<string> names;
+    map<string,int> names;
 
     while(n--){
         string s;
         cin >> s;
-        names.insert(s);
-        
+        if(!names.count(s)){
+            cout << "OK" << endl;
+            names[s]++;
+        }
+        else{
+            cout << s << names[s]++ << endl;
+        }
     }
 
     return 0;

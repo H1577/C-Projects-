@@ -1,22 +1,23 @@
 /*
 Maps
 -- Contains pair of Elements (key->value)
--- And Sorted
+-- And Sorted But in unordered_map it is Random Sorting
 
 Built in Functions
-x.count(key)
+x.count(key) (True or False)
 x.erase(key)
 x.size()
 x.clear()
 x.empty() (True or False)
 */
 #include <iostream>
-#include <map>
+#include <map>           //Sorted
+#include <unordered_map> //Random Sorting
 using namespace std;
 
 int main(){
 
-    map<string ,int> people = {{"Luffy",18},{"Nami",24}};
+    unordered_map<string ,int> people = {{"Luffy",18},{"Nami",24}};
 
     people["Luffy"] = 21; //Adding
     people["Zoro"] = 28 ; //Adding
