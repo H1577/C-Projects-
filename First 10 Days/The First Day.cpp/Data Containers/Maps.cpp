@@ -24,7 +24,7 @@ int main(){
     people["Sanji"] = 23; //Adding
 
     cout << people["Luffy"] << '\n';  //21
-    cout << people["Chopper"] << '\n';//0
+    cout << people["Chopper"] << '\n';//0 And Adding Because It is not in the map
 
     if(people.count("Luffy"))
         cout << "Luffy is Found" << '\n';

@@ -1,19 +1,23 @@
 #include <iostream>
-#include <set>
+#include <vector>
 using namespace std;
 
 int main(){
 
-    string s;
-    cin >> s;
-    set<char> text;
-    for(auto i: s)
-        text.insert(i);
-
-    if(text.size()%2 == 0)
-        cout << "CHAT WITH HER!";
-    else
-        cout << "IGNORE HIM!";
-
+    int n;
+    long long price = 0;
+    long long max = 0;
+    cin >> n;
+    vector<long long> nums(n);
+    
+    for(int i =0; i<n;i++){
+        cin >> nums.at(i);
+        if(nums.at(i)>max)
+            max = nums.at(i);
+    }
+    for(auto p: nums){
+        price = price+(max-p);
+    }
+    cout << price;
     return 0;
 }
